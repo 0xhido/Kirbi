@@ -1,8 +1,9 @@
 #pragma once
 
-#include <ntifs.h>
+#include "Kirbi.h"
 
 #include "Undocumented.h"
+#include "InjectedShellcode.h"
 
 extern EX_RUNDOWN_REF g_RundownProtection;
 

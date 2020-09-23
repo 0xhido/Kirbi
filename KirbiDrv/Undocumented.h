@@ -1,6 +1,6 @@
 #pragma once
 
-#include <ntifs.h>
+#include "Kirbi.h"
 
 typedef enum _KAPC_ENVIRONMENT {
 	OriginalApcEnvironment,
@@ -33,7 +33,8 @@ VOID
 	IN  PKAPC Apc
 	);
 
-extern "C"
+EXTERN_C_START
+
 VOID
 KeInitializeApc(
 	IN  PKAPC Apc,
@@ -46,7 +47,6 @@ KeInitializeApc(
 	IN  PVOID NormalContext OPTIONAL
 );
 
-extern "C"
 BOOLEAN
 KeInsertQueueApc(
 	IN  PKAPC Apc,
@@ -55,7 +55,6 @@ KeInsertQueueApc(
 	IN  KPRIORITY Increment
 );
 
-extern "C"
 NTKERNELAPI
 PVOID
 NTAPI
@@ -63,10 +62,18 @@ PsGetProcessWow64Process(
 	_In_ PEPROCESS Process
 );
 
-extern "C"
 NTKERNELAPI
 BOOLEAN
 NTAPI
 PsIsProtectedProcess(
 	_In_ PEPROCESS Process
 );
+
+NTKERNELAPI
+PCHAR
+NTAPI
+PsGetProcessImageFileName(
+	_In_ PEPROCESS Process
+);
+
+EXTERN_C_END

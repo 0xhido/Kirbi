@@ -4,8 +4,9 @@
 
 bool g_ProcessNotifyCreated = false;
 bool g_ThreadNotifyCreated = false;
+bool g_LoadImageNotifyCreated = false;
 
-NewProcessList* g_NewProcessList = nullptr;
+NewProcessList g_NewProcessList;
 EX_RUNDOWN_REF g_RundownProtection;
 
 VOID
@@ -18,6 +19,8 @@ DriverUnload(
 		PsSetCreateProcessNotifyRoutine(OnProcessNotify, TRUE);
 	if (g_ThreadNotifyCreated)
 		PsRemoveCreateThreadNotifyRoutine(OnThreadNotify);
+	if (g_LoadImageNotifyCreated)
+		PsRemoveLoadImageNotifyRoutine(OnLoadImageNotify);
 
 	::ExWaitForRundownProtectionRelease(&g_RundownProtection);
 }
@@ -35,11 +38,7 @@ DriverEntry(
 
 	DriverObject->DriverUnload = DriverUnload;
 
-	g_NewProcessList = (NewProcessList*)ExAllocatePoolWithTag(PagedPool, sizeof(NewProcessList), DRIVER_TAG);
-	if (g_NewProcessList == nullptr) {
-		DbgPrint(DRIVER_PREFIX "Failed allocate memory for new process list\n");
-		return STATUS_INSUFFICIENT_RESOURCES;
-	}
+	g_NewProcessList.Init();
 
 	status = PsSetCreateProcessNotifyRoutine(OnProcessNotify, FALSE);
 	if (!NT_SUCCESS(status))
@@ -56,6 +55,17 @@ DriverEntry(
 		return status;
 	}
 	g_ThreadNotifyCreated = true;
+
+	status = PsSetLoadImageNotifyRoutine(OnLoadImageNotify);
+	if (!NT_SUCCESS(status))
+	{
+		PsSetCreateProcessNotifyRoutine(OnProcessNotify, TRUE);
+		PsRemoveCreateThreadNotifyRoutine(OnThreadNotify);
+		return status;
+	}
+	g_LoadImageNotifyCreated = true;
+
+	g_NewProcessList.Destroy();
 
 	::ExInitializeRundownProtection(&g_RundownProtection);
 

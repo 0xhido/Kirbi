@@ -1,5 +1,13 @@
 #include "NewProcessList.h"
 
+void NewProcessList::Init() {
+	_processes.Init();
+}
+
+void NewProcessList::Destroy() {
+	_processes.Destroy();
+}
+
 void NewProcessList::AddProcess(ULONG ProcessId) {
 	AutoLock<FastMutex> locker(_processes.GetMutex());
 

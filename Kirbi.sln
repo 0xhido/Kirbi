@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KirbiClient", "KirbiClient\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KirbiDrv", "KirbiDrv\KirbiDrv.vcxproj", "{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KirbiDll", "KirbiDll\KirbiDll.vcxproj", "{E4AC1189-C5DE-4125-800C-97C31994C794}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -55,6 +57,18 @@ Global
 		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x86.ActiveCfg = Release|Win32
 		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x86.Build.0 = Release|Win32
 		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x86.Deploy.0 = Release|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Debug|ARM.ActiveCfg = Debug|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Debug|x64.ActiveCfg = Debug|x64
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Debug|x64.Build.0 = Debug|x64
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Debug|x86.ActiveCfg = Debug|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Debug|x86.Build.0 = Debug|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Release|ARM.ActiveCfg = Release|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Release|ARM64.ActiveCfg = Release|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Release|x64.ActiveCfg = Release|x64
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Release|x64.Build.0 = Release|x64
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Release|x86.ActiveCfg = Release|Win32
+		{E4AC1189-C5DE-4125-800C-97C31994C794}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

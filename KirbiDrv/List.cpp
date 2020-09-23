@@ -1,11 +1,12 @@
 #include "List.h"
 
-List::List() : _count() {
+void List::Init() {
+	_count = 0;
 	::InitializeListHead(&_head);
 	_mutex.Init();
 }
 
-List::~List() {
+void List::Destroy() {
 	while (!IsListEmpty(&_head)) {
 		auto entry = ::RemoveTailList(&_head);
 		ExFreePool(entry);

@@ -37,6 +37,9 @@
     <ClCompile Include="ApcRoutines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InjectedShellcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NotifyRoutines.h">
@@ -61,6 +64,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ApcRoutines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectedShellcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

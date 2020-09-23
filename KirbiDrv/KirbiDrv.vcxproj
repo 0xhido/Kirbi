@@ -143,6 +143,7 @@
   <ItemGroup>
     <ClCompile Include="ApcRoutines.cpp" />
     <ClCompile Include="FastMutex.cpp" />
+    <ClCompile Include="InjectedShellcode.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Kirbi.cpp" />
     <ClCompile Include="NewProcessList.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="ApcRoutines.h" />
     <ClInclude Include="AutoLock.h" />
     <ClInclude Include="FastMutex.h" />
+    <ClInclude Include="InjectedShellcode.h" />
     <ClInclude Include="Kirbi.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="NewProcessList.h" />

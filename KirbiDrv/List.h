@@ -8,8 +8,8 @@
 class List
 {
 public:
-	List();
-	~List();
+	void Init();
+	void Destroy();
 
 	void Insert(PLIST_ENTRY entry);
 	void Remove(PLIST_ENTRY entry);

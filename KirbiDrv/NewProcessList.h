@@ -13,6 +13,9 @@ struct ProcessEntry {
 class NewProcessList
 {
 public:
+	void Init();
+	void Destroy();
+
 	void AddProcess(ULONG ProcessId);
 	void RemoveProcess(ULONG ProcessId);
 	bool IsNewProcess(ULONG ProcessId);

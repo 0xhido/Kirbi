@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KirbiClient", "KirbiClient\KirbiClient.vcxproj", "{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KirbiDrv", "KirbiDrv\KirbiDrv.vcxproj", "{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Debug|ARM.ActiveCfg = Debug|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Debug|x64.ActiveCfg = Debug|x64
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Debug|x64.Build.0 = Debug|x64
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Debug|x86.Build.0 = Debug|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Release|ARM.ActiveCfg = Release|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Release|ARM64.ActiveCfg = Release|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Release|x64.ActiveCfg = Release|x64
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Release|x64.Build.0 = Release|x64
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Release|x86.ActiveCfg = Release|Win32
+		{D9B6DB4A-5332-4EB3-8EA1-88D902ED153C}.Release|x86.Build.0 = Release|Win32
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|ARM.Build.0 = Debug|ARM
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|ARM64.Build.0 = Debug|ARM64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|x64.ActiveCfg = Debug|x64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|x64.Build.0 = Debug|x64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|x64.Deploy.0 = Debug|x64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|x86.ActiveCfg = Debug|Win32
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|x86.Build.0 = Debug|Win32
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Debug|x86.Deploy.0 = Debug|Win32
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|ARM.ActiveCfg = Release|ARM
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|ARM.Build.0 = Release|ARM
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|ARM.Deploy.0 = Release|ARM
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|ARM64.ActiveCfg = Release|ARM64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|ARM64.Build.0 = Release|ARM64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|ARM64.Deploy.0 = Release|ARM64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x64.ActiveCfg = Release|x64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x64.Build.0 = Release|x64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x64.Deploy.0 = Release|x64
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x86.ActiveCfg = Release|Win32
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x86.Build.0 = Release|Win32
+		{E9A73C0C-084F-4580-AF01-BC2A8F9C4754}.Release|x86.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1499E14-6FCE-49D4-8414-5A55881D540E}
+	EndGlobalSection
+EndGlobal
